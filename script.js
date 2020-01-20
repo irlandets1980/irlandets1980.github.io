@@ -11,9 +11,12 @@ let appData = {
     savings: false
 
 };
-question1 = prompt("Введите обязательную статью расходов в этом месяце");
-question2 = prompt("Во сколько обойдется?");
-appData.expenses = {};
+let question1 = prompt("Введите обязательную статью расходов в этом месяце");
+let question2 = prompt("Во сколько обойдется?");
+appData.expenses = {
+    question1: question2,
+    question1: question2,
+};
 
 
 
