@@ -1,18 +1,34 @@
 'use strict';
 
-// let num = 50;
-// switch (num) {
-//     case num < 49:
-//         console.log("Мало!")
-//         break;
-//     case num > 100:
-//         console.log("Много!")
-//         break;
-//     case  50:
-//         console.log("Равно!")
-//         break;
-//     default:
-//         console.log();
-//         break;
-// }
+let money = prompt("Ваш бюджет на месяц?");
+let time = prompt("Введите дату в формате YYYY-MM-DD");
+
+let appData = {
+    budget: money,//бюджет
+    timeData: time,
+    expenses: {},//расход
+    optionalExpenses: {},
+    income: [],
+    savings: false
+
+};
+
+
+
+
+for (let i = 0; i < 2; i++) {
+    let a = prompt("Введите обязательную статью расходов в этом месяце"),
+        b = prompt("Во сколько обойдется?");
+
+    if ((typeof (a)) === "string" && (typeof (a)) != null && (typeof (b)) != null && a != "" && b != "" && a.length < 50) {
+        console.log("done");
+        appData.expenses[a] = b;
+    } else {
+
+    }
+
+};
+appData.manyPerDay=appData.budget / 30;
+
+alert("Ежедневный бюджет : " + appData.budget / 30);
 
