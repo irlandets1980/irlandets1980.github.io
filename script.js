@@ -21,6 +21,6 @@ appData.expenses = {  //заполняем расходы
     answer3: answer4
 };
 
-let summ = (appData.budget-appData.expenses.answer1-appData.expenses.answer3)/30;
-alert("бюджет на 1 день: "+(appData.budget-appData.expenses.answer1-appData.expenses.answer3)/30);
+
+alert("бюджет на 1 день: "+appData.budget/30);
 
