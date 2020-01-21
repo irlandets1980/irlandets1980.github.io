@@ -43,3 +43,5 @@ if (appData.manyPerDay < 100) {
 }else{
     console.log('Произошла ошибка');
 }
+
+let calc = (a,b) => a+b;
