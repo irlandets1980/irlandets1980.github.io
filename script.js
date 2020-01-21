@@ -4,26 +4,23 @@ let money = prompt("Ваш бюджет на месяц?");
 let time = prompt("Введите дату в формате YYYY-MM-DD");
 
 let appData = {
-    budget: money,
+    budget: money,//бюджет
     timeData: time,
-    expenses : {},
-    income : [],
+    expenses: {},//расход
+    optionalExpenses: {},
+    income: [],
     savings: false
 
+}; 
+let answer1 = prompt("Введите обязательную статью расходов в этом месяце");
+let answer2 = prompt("Во сколько обойдется?");
+let answer3 = prompt("Введите обязательную статью расходов в этом месяце");
+let answer4 = prompt("Во сколько обойдется?");
+appData.expenses = {  //заполняем расходы
+    answer1: answer2,
+    answer3: answer4
 };
-let question1 = prompt("Введите обязательную статью расходов в этом месяце");
-let question2 = prompt("Во сколько обойдется?");
-appData.expenses = {
-    question1: question2,
-    question1: question2,
-};
 
+let summ = (appData.budget-appData.expenses.answer1-appData.expenses.answer3)/30;
+alert("бюджет на 1 день: "+(appData.budget-appData.expenses.answer1-appData.expenses.answer3)/30);
 
-
-// let sum = 2+3;
-
-// let arr = ['plum.png','orange.bmp'];
-
-// console.log('сумма равна = '+sum);
-// let answer = +prompt('вы уверены?','да');
-// console.log(answer);
